@@ -1,0 +1,29 @@
+//用c++写的，没用goroutine（不会：:）
+#include<iostream>
+using namespace std;
+int Prefect (int n);
+
+int sum;
+ int n;
+int main(){
+    
+      for(int i1=1;i1<=100;i1++){
+        if(i1==Prefect(i1)){
+            cout<<i1<<endl;
+             sum=0;
+        }
+       
+    }
+
+}
+
+int Prefect (int n){
+    
+    for(int i=1;i<n;i++){
+        if(n%i==0){
+            
+            sum+=i;
+        }
+    }
+return sum;
+}
